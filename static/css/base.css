@@ -1,16 +1,16 @@
 html {
-    height: 100%; /*this allows h-100 and vertical centering to work*/
+    height: 100%;
 }
 
 body {
-    background: url('/media/homepage_background_cropped.jpg') no-repeat center center fixed;
-    background-size: cover;
-    height: calc(100vh - 164px); /* 164px is height of top header */
+	background: url('/media/homepage_background_cropped.jpg') no-repeat center center fixed;
+	background-size: cover;
+    height: calc(100vh - 164px);
     color: #555;
-    font-family: 'Lato';
+    font-family: "Lato";
 }
 
-/* from Bulma (other framework similar to Bootstrap */
+/* from Bulma */
 .icon {
     align-items: center;
     display: inline-flex;
@@ -24,7 +24,7 @@ body {
 }
 
 .main-logo-link {
-    width: fit-content; /* only takes as much space as the text requires */
+    width: fit-content;
 }
 
 .shop-now-button {
@@ -56,7 +56,11 @@ body {
     border: 1px solid black !important;
 }
 
-/* -------------------------------- Media Queries */
+.bg-black {
+    background: #000 !important;
+}
+
+/* --------------------------------- Media queries */
 
 /* Slightly larger container on xl screens */
 @media (min-width: 1200px) {
@@ -76,6 +80,6 @@ body {
     }
 
     .header-container {
-        padding-top: 164px; /* page header block - push the body down to the bottom of the main page header */
+        padding-top: 164px;
     }
 }
