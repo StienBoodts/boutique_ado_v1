@@ -12,7 +12,7 @@ class ProductAdmin(admin.ModelAdmin):
         'rating',
         'image'
     )
-
+    #this has to be a tuple even if it only has one argument hence the comma
     ordering = ('sku',)
 
 class CategoryAdmin(admin.ModelAdmin):
